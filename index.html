@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabor Andino | Plataforma de Comercio Justo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .content-section { opacity: 0; transform: translateY(20px); transition: opacity .8s, transform .8s; }
+    .fade-in { opacity: 1; transform: translateY(0); }
+    .btn-primary { background: #1e3a8a; color: white; padding: .75rem 2rem; border-radius: 9999px; font-weight: 600; transition: .2s; }
+    .btn-primary:hover { background: #1e40af; transform: translateY(-2px); }
+    .btn-ai { background: linear-gradient(to right,#2563eb,#1e3a8a); color:white;padding:.75rem 2rem;border-radius:9999px;font-weight:600;transition:.2s; }
+    .btn-ai:hover { background:linear-gradient(to right,#1e3a8a,#2563eb); transform:translateY(-2px);}    
+  </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+      <a class="flex items-center space-x-2" href="#">
+        <svg class="w-8 h-8 text-blue-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <rect x="2" y="2" width="20" height="20" rx="6" />
+          <path d="M12 5C10.5 5 9 7 9 12s1.5 7 3 7 3-2 3-7-1.5-7-3-7z" />
+          <path d="M12 5v14" />
+        </svg>
+        <span class="text-xl font-bold">Sabor Andino</span>
+      </a>
+      <button onclick="document.getElementById('waitlist-form').scrollIntoView({behavior:'smooth'})" class="text-gray-600 hover:text-gray-900 hidden sm:block">Únete a la Beta</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="content-section text-center min-h-[80vh] flex items-center justify-center px-4" id="hero">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-6xl sm:text-7xl font-extrabold tracking-tight leading-tight mb-8 bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-600">
+        Estamos construyendo algo grande.
+      </h1>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-10">
+        Muy pronto conocerás la plataforma que transformará la forma de conectar productores y compradores en el mercado cafetero.
+      </p>
+      <button onclick="document.getElementById('waitlist-form').scrollIntoView({behavior:'smooth'})" class="btn-primary text-lg">Sé el primero en saberlo</button>
+    </div>
+  </section>
+
+  <!-- Imagen placeholder -->
+  <section class="content-section max-w-7xl mx-auto px-4 py-16">
+    <div class="rounded-3xl shadow-xl h-[400px] bg-cover bg-center" style="background-image:url('https://placehold.co/1200x600/2C2C2C/EAEAEA?text=CAFÉ+COLOMBIANO+DE+ESPECIALIDAD');"></div>
+  </section>
+
+  <!-- Misión -->
+  <section class="content-section max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+    <div>
+      <p class="text-sm uppercase text-gray-400">Nuestra misión</p>
+      <h2 class="text-4xl font-bold mt-2 mb-4">Digitalizando la esencia del café.</h2>
+    </div>
+    <div class="text-lg text-gray-600 space-y-4">
+      <p>Conectamos la pasión del caficultor colombiano con la demanda global mediante tecnología y transparencia.</p>
+      <p>Estamos desarrollando una plataforma robusta que facilita el comercio justo real, otorgando visibilidad y herramientas a pequeños productores.</p>
+    </div>
+  </section>
+
+  <!-- Problema / Solución -->
+  <section class="content-section bg-gray-50 py-20">
+    <div class="max-w-7xl mx-auto px-4 text-center mb-12">
+      <p class="text-sm uppercase text-gray-400">La Transformación</p>
+      <h2 class="text-5xl font-extrabold">Transparencia, Trazabilidad, Futuro.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
+      <div class="p-8 bg-white rounded-2xl shadow hover:shadow-xl transition">
+        <div class="text-5xl mb-4">🚫</div>
+        <h3 class="font-bold text-xl mb-3">El Desafío</h3>
+        <p class="text-gray-500">La cadena actual es opaca e ineficiente. Productores reciben precios bajos y compradores carecen de trazabilidad.</p>
+      </div>
+
+      <div class="p-8 bg-white rounded-2xl shadow hover:shadow-xl transition">
+        <div class="text-5xl mb-4">💻</div>
+        <h3 class="font-bold text-xl mb-3">Nuestra Plataforma</h3>
+        <p class="text-gray-500">Conexión directa, perfiles detallados, gestión de fincas y transparencia en cada transacción.</p>
+      </div>
+
+      <div class="p-8 bg-white rounded-2xl shadow hover:shadow-xl transition">
+        <div class="text-5xl mb-4">📈</div>
+        <h3 class="font-bold text-xl mb-3">El Resultado</h3>
+        <p class="text-gray-500">Mayor rentabilidad, mejor calidad y una cadena cafetera digitalizada.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section class="content-section max-w-7xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">Un Ecosistema de Ganar-Ganar</h2>
+    <div class="grid lg:grid-cols-2 gap-12">
+
+      <div class="bg-gray-50 p-8 rounded-xl">
+        <h3 class="text-2xl font-semibold mb-4">Productores</h3>
+        <ul class="space-y-4 text-lg text-gray-600">
+          <li class="flex"><span class="mr-3 text-green-500">✓</span>Precios justos con acceso directo.</li>
+          <li class="flex"><span class="mr-3 text-green-500">✓</span>Herramientas de gestión.</li>
+          <li class="flex"><span class="mr-3 text-green-500">✓</span>Trazabilidad completa.</li>
+        </ul>
+      </div>
+
+      <div class="bg-gray-50 p-8 rounded-xl">
+        <h3 class="text-2xl font-semibold mb-4">Compradores</h3>
+        <ul class="space-y-4 text-lg text-gray-600">
+          <li class="flex"><span class="mr-3 text-green-500">✓</span>Acceso directo a café de especialidad.</li>
+          <li class="flex"><span class="mr-3 text-green-500">✓</span>Transparencia total.</li>
+          <li class="flex"><span class="mr-3 text-green-500">✓</span>Perfiles sensoriales verificados.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- IA Feature -->
+  <section class="content-section bg-blue-50 py-20" id="gemini-feature">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-sm uppercase text-blue-700">Impulsado por IA</p>
+      <h2 class="text-4xl font-extrabold mb-4">Descubre tu Café Ideal</h2>
+      <p class="text-lg text-gray-600 mb-8">Describe un perfil sensorial y generaremos maridaje + descripción premium.</p>
+    </div>
+
+    <form id="coffeeProfileForm" class="max-w-2xl mx-auto flex flex-col gap-4 px-4">
+      <textarea id="profileInput" rows="3" class="p-4 border rounded-xl" placeholder="Ej: Notas a chocolate y flores..." ></textarea>
+      <button class="btn-ai text-lg">Generar Perfil y Maridaje</button>
+    </form>
+
+    <div id="resultsArea" class="max-w-3xl mx-auto mt-10 px-4">
+      <div id="loader" class="hidden text-center font-semibold text-blue-700">Analizando…</div>
+      <div id="resultCard" class="hidden bg-white p-6 rounded-2xl shadow border-l-4 border-blue-900 mt-6">
+        <h3 class="text-2xl font-bold mb-4">Resultados Generados</h3>
+        <p class="text-sm font-semibold text-gray-500 uppercase">Maridaje</p>
+        <p id="pairingResult" class="text-xl font-medium text-blue-900 mb-4"></p>
+        <p class="text-sm font-semibold text-gray-500 uppercase">Descripción</p>
+        <p id="descriptionResult" class="text-lg italic text-gray-700"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waitlist -->
+  <section class="content-section max-w-4xl mx-auto px-4 py-20" id="waitlist-form">
+    <div class="bg-gray-900 text-white p-10 rounded-3xl text-center">
+      <h2 class="text-4xl font-extrabold mb-4">Sé parte de la revolución cafetera</h2>
+      <p class="text-gray-300 mb-6">Regístrate para la Beta.</p>
+
+      <form id="waitlistForm" class="max-w-lg mx-auto">
+        <div class="flex flex-col sm:flex-row gap-4">
+          <input type="email" id="emailInput" required class="flex-grow p-3 rounded-full bg-gray-800 border border-gray-700" placeholder="Tu email" />
+          <button class="btn-primary bg-blue-600">Unirse</button>
+        </div>
+        <p id="message" class="text-green-400 text-sm mt-3 opacity-0"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t mt-16 py-8 text-center text-sm text-gray-500">
+    © 2025 Sabor Andino · Privacidad · Términos
+  </footer>
+
+  <!-- Scripts: Firebase + Gemini -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+    import { firebaseConfig } from "./firebase-config.js";
+    import { generateRecipe } from "./gemini-service.js";
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    /* ----- IA: Perfil cafetero ----- */
+    const coffeeForm = document.getElementById("coffeeProfileForm");
+    const input = document.getElementById("profileInput");
+    const loader = document.getElementById("loader");
+    const resultCard = document.getElementById("resultCard");
+    const pairing = document.getElementById("pairingResult");
+    const description = document.getElementById("descriptionResult");
+
+    coffeeForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const text = input.value.trim();
+      if (!text) return;
+
+      loader.classList.remove("hidden");
+      resultCard.classList.add("hidden");
+
+      const { pairing: p, description: d } = await generateRecipe(text);
+
+      pairing.textContent = p;
+      description.textContent = d;
+      loader.classList.add("hidden");
+      resultCard.classList.remove("hidden");
+    });
+
+    /* ----- Waitlist Firebase ----- */
+    const waitlistForm = document.getElementById("waitlistForm");
+    const emailInput = document.getElementById("emailInput");
+    const message = document.getElementById("message");
+
+    waitlistForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = emailInput.value.trim();
+      if (!email) return;
+
+      await addDoc(collection(db, "waitlist"), { email, date: new Date() });
+      message.textContent = "¡Registrado! Pronto sabrás más.";
+      message.style.opacity = 1;
+      emailInput.value = "";
+    });
+  </script>
+
+</body>
+</html>
